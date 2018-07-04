@@ -7,6 +7,24 @@
   As per the OO Principles, one should have properties as private and changes must be allowed through the   methods only. This rule is for enforcing the guaranty that there will be no accidental change of property. 
   Getters and setters encapsulate the fields of a class by making them accessible only through its public methods and keep the values themselves private. That is considered a good OO principle. ... Getter and setter method are used to get and set the value of x which is the way to achive encapsulation
 
+**Generator**
+
+Generators are used to create iterators, but with a different approach. Generators are simple functions which return an iterable set of items, one at a time, in a special way.
+
+A generator-function is defined like a normal function, but whenever it needs to generate a value, it does so with the yield keyword rather than return. 
+
+If the body of a def contains yield, the function automatically becomes a generator function.
+
+Every time it create a generator object.
+
+
+**xrange in p3**
+
+It creates range object.
+
+**xrange in p2**
+
+It creates xrange object.
 
 **abstract method**
 
