@@ -38,3 +38,13 @@ PEP 8 is a set of recommendations about writing Python Code so as to make it rea
 **Is Python a Scripting Language or not?**
 
 Python is a General-Purpose Programming Language or rather a Multi-Purpose Programming Language. It is also a Scripting Language as it can be used to combine it into HTML Code used for Web Development.
+
+**Python GIL (Global Interpreter Lock)**
+
+Global interpreter lock (GIL) is a mechanism used in computer language interpreters to synchronize the execution of threads so that only one native thread can execute at a time.
+
+This lock is necessary mainly because CPython’s memory management is not thread-safe(Python virtual machine is not thread safe).
+
+A global interpreter lock (GIL) is a mutual-exclusion lock held by a programming language interpreter thread to avoid sharing code that is not thread-safe with other threads. In implementations with a GIL, there is always one GIL for each interpreter process.
+
+Applications running on implementations with a GIL can be designed to use separate processes to achieve full parallelism, as each process has its own interpreter and in turn has its own GIL.
