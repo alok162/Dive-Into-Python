@@ -1,4 +1,5 @@
 import threading
+import time
 
 class Thread1(threading.Thread):
 
