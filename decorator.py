@@ -1,11 +1,10 @@
-def my_deco(obj):
-    def inner_func(designation):
-        print 'decorator function executed',obj
-        return obj
-    return inner_func
+def my_deco(func):
+    def inner(s):
+        return s+' INR'
+    return inner
 
 @my_deco
-def display(designation):
-    pass
+def temp(s):
+    return s
 
-display('developer')
+print(temp('500'))
